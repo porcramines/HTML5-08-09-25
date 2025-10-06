@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- 
+
+ctx .arc (x, y, radio, startAngle, endAngle, antihorario);
+
+Parámetros
+x
+La coordenada x del centro del arco.
+
+y
+La coordenada y del centro del arco.
+radius
+El radio del arco.
+
+startAngle
+El ángulo en el que se inicia el arco, medido en sentido horario desde el eje x positivo y expresado en radianes.
+
+endAngle
+El ángulo en el que termina el arco, medido en sentido horario desde el eje x positivo y expresado en radianes.
+
+anticlockwise Opcional
+Un Boolean opcional que, si es true , hace que el arco se dibuje en sentido contrario a las agujas del reloj entre los dos ángulos. De forma predeterminada, se dibuja en el sentido de las agujas del reloj.
+
+-->
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+</script> 
+
+</body>
+</html>
